@@ -1,0 +1,9 @@
+﻿@model MvcApplication1.Areas.Area.Models.test
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.Hidden("LineId", Model == null ?  ViewBag.Title : Model.Id.ToString())
+
